@@ -14,7 +14,7 @@
 #include <vector>
 #include <string>
 
-#include "FClass.h"
+#include <DBoW2/FClass.h>
 #include <DVision/DVision.h>
 
 namespace DBoW2 {

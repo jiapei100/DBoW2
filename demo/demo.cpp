@@ -10,7 +10,7 @@
 #include <vector>
 
 // DBoW2
-#include "DBoW2.h" // defines Surf64Vocabulary and Surf64Database
+#include <DBoW2/DBoW2.h> // defines Surf64Vocabulary and Surf64Database
 
 #include <DUtils/DUtils.h>
 #include <DVision/DVision.h>

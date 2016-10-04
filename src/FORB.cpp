@@ -15,7 +15,7 @@
 
 #include <DUtils/DUtils.h>
 #include <DVision/DVision.h>
-#include "FORB.h"
+#include <DBoW2/FORB.h>
 
 using namespace std;
 

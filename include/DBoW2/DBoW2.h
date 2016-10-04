@@ -60,14 +60,14 @@ namespace DBoW2
 {
 }
 
-#include "TemplatedVocabulary.h"
-#include "TemplatedDatabase.h"
-#include "BowVector.h"
-#include "FeatureVector.h"
-#include "QueryResults.h"
-#include "FSurf64.h"
-#include "FBrief.h"
-#include "FORB.h"
+#include <DBoW2/TemplatedVocabulary.h>
+#include <DBoW2/TemplatedDatabase.h>
+#include <DBoW2/BowVector.h>
+#include <DBoW2/FeatureVector.h>
+#include <DBoW2/QueryResults.h>
+#include <DBoW2/FSurf64.h>
+#include <DBoW2/FBrief.h>
+#include <DBoW2/FORB.h>
 
 /// SURF64 Vocabulary
 typedef DBoW2::TemplatedVocabulary<DBoW2::FSurf64::TDescriptor, DBoW2::FSurf64> 

@@ -19,9 +19,9 @@
 #include <algorithm>
 #include <opencv2/core.hpp>
 
-#include "FeatureVector.h"
-#include "BowVector.h"
-#include "ScoringObject.h"
+#include <DBoW2/FeatureVector.h>
+#include <DBoW2/BowVector.h>
+#include <DBoW2/ScoringObject.h>
 
 #include <DUtils/DUtils.h>
 

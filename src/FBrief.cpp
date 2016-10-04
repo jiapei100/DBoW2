@@ -12,7 +12,7 @@
 #include <sstream>
 
 #include <DVision/DVision.h>
-#include "FBrief.h"
+#include <DBoW2/FBrief.h>
 
 using namespace std;
 
