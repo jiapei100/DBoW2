@@ -63,7 +63,7 @@ endif(${DLib_FOUND})
 
 if(BUILD_DBoW2)
   add_library(${PROJECT_NAME} SHARED ${SRCS})
-  include_directories(include/DBoW2/)
+  include_directories(include/)
   add_dependencies(${PROJECT_NAME} Dependencies)
   target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} ${DLib_LIBS})
 endif(BUILD_DBoW2)
@@ -79,10 +79,10 @@ configure_file(src/DBoW2.cmake.in
 
 install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
 if(BUILD_DBoW2)
-  install(DIRECTORY include/DBoW2 DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
+  install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
 endif()
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/DBoW2Config.cmake"
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/include/${PROJECT_NAME})
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/${PROJECT_NAME})
 install(FILES "${PROJECT_BINARY_DIR}/DBoW2Config.cmake" 
   DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/cmake/DBoW2/)
 install(DIRECTORY ${DEPENDENCY_INSTALL_DIR}/ DESTINATION ${CMAKE_INSTALL_PREFIX} OPTIONAL)
